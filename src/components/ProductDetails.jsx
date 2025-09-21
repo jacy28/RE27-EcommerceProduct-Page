@@ -13,7 +13,7 @@ const ProductDetails = ({productId}) => {
 
     return (
         <div className="bg-white shadow rounded-2xl p-6">
-            <img src={product.image} alt={product.title} className="rounded-xl mb-4 w-full h-80 object-cover" />
+            <img src={product.image} alt={product.title} className="rounded-xl mb-4 mx-auto block object-cover" />
             <h2 className="text-2xl font-semibold mb-2">{product.title}</h2>
             <p className="text-gray-600 mb-4">{product.description}</p>
             <p className="text-xl font-bold text-blue-600 mb-4">${product.price}</p>

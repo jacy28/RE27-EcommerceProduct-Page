@@ -11,10 +11,11 @@ const App = () => {
       <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-6">
 
         {/* Product Details */}
-        <div className="lg:col-span-2">
+        <div className="lg:col-span-2 mx-auto block">
           <Suspense fallback={<p className="tex-gray-600">Loading...</p>}>
             <ProductDetails productId= {1} />
           </Suspense>
+          </div>
 
           {/* Suggestions */}
           <div>
@@ -30,7 +31,7 @@ const App = () => {
             </Suspense>
           </div>
 
-        </div>
+        
       </div>
     </div>
   )
